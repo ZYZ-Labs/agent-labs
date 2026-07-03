@@ -32,6 +32,7 @@ export interface ChatCompletionOptions {
   tools?: unknown[];
   tool_choice?: string | Record<string, unknown>;
   stream?: boolean;
+  n?: number;
   extra_body?: Record<string, unknown>;
 }
 
@@ -58,7 +59,7 @@ export function loadConfig(path?: string): OpenAIConfig {
 }
 
 export class OpenAIClient {
-  private config: OpenAIConfig;
+  public readonly config: OpenAIConfig;
   private timeoutMs: number;
   private maxRetries: number;
 
@@ -94,6 +95,7 @@ export class OpenAIClient {
     if (options.response_format !== undefined) payload.response_format = options.response_format;
     if (options.tools !== undefined) payload.tools = options.tools;
     if (options.tool_choice !== undefined) payload.tool_choice = options.tool_choice;
+    if (options.n !== undefined) payload.n = options.n;
     if (options.extra_body) Object.assign(payload, options.extra_body);
 
     if (this.config.logLevel === "DEBUG") {

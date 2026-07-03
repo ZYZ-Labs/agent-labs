@@ -1,9 +1,10 @@
 {
-  "name": "lab-30-multilingual-agents",
-  "version": "1.0.0",
+  "name": "agent-lab-20-human-in-the-loop-node",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "ts-node main.ts"
+    "start": "ts-node main.ts",
+    "reset": "ts-node main.ts --reset"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

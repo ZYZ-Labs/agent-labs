@@ -1,0 +1,19 @@
+{
+  "name": "agent-labs",
+  "version": "1.0.0",
+  "description": "Companion executable code for the AI Agent Engineering course on AI Engineer Toolbox.",
+  "private": true,
+  "scripts": {
+    "typecheck:node": "node -e \"const fs=require('fs'),path=require('path'),{execSync}=require('child_process'); const root=process.cwd(); const tsc=path.join(root,'node_modules','.bin','tsc'); const labs=path.join('labs'); for(const dir of fs.readdirSync(labs).sort()){const nodeDir=path.join(labs,dir,'node'); if(!fs.existsSync(nodeDir)) continue; console.log('Checking',dir); execSync(JSON.stringify(tsc)+' --noEmit --project tsconfig.json',{cwd:nodeDir,stdio:'inherit'});}\"",
+    "compile:python": "node -e \"const fs=require('fs'),path=require('path'),{execSync}=require('child_process'); const labs=path.join('labs'); for(const dir of fs.readdirSync(labs).sort()){const py=path.join(labs,dir,'python','main.py'); if(!fs.existsSync(py)) continue; console.log('Compiling',py); execSync('python -m py_compile \"'+py+'\"',{stdio:'inherit'});}\"",
+    "check": "npm run typecheck:node && npm run compile:python"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/node-fetch": "^2.6.11",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

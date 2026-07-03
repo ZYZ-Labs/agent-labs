@@ -1,6 +1,6 @@
 {
-  "name": "lab-30-multilingual-agents",
-  "version": "1.0.0",
+  "name": "agent-lab-14-prompt-first-dev-node",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "ts-node main.ts"

@@ -1,13 +1,15 @@
 {
-  "name": "lab-30-multilingual-agents",
-  "version": "1.0.0",
+  "name": "agent-lab-12-lsp-treesitter-node",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "ts-node main.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-python": "^0.23.2"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",

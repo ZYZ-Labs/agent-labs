@@ -1,5 +1,5 @@
 {
-  "name": "lab-30-multilingual-agents",
+  "name": "lab-29-deployment",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "node-fetch": "^2.7.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^20.14.0",
     "@types/node-fetch": "^2.6.11",
     "ts-node": "^10.9.2",

@@ -1,5 +1,5 @@
 {
-  "name": "lab-30-multilingual-agents",
+  "name": "lab-27-observability",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,11 +7,13 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
     "@types/node-fetch": "^2.6.11",
+    "@types/uuid": "^9.0.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }

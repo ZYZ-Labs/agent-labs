@@ -1,0 +1,24 @@
+{
+  "name": "agent-lab-22-temporal-orchestration-node",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node main.ts",
+    "worker": "ts-node worker.ts"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.11.0",
+    "@temporalio/client": "^1.11.0",
+    "@temporalio/common": "^1.11.0",
+    "@temporalio/worker": "^1.11.0",
+    "@temporalio/workflow": "^1.11.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
