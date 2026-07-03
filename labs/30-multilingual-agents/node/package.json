@@ -1,0 +1,9 @@
+{
+  "name": "agent-lab-30-node",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "openai": "^4.0.0"
+  }
+}

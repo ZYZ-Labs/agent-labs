@@ -1,0 +1,24 @@
+[
+  {
+    "id": "port-range",
+    "input": "What port range is safe for user services?",
+    "expected_keywords": ["1024", "65535"],
+    "reference": "User services should use ports from 1024 to 65535.",
+    "max_latency_ms": 10000
+  },
+  {
+    "id": "idempotency",
+    "input": "Explain idempotency in one sentence.",
+    "expected_keywords": ["same", "multiple", "result"],
+    "reference": "Idempotency means calling an operation multiple times produces the same result.",
+    "max_latency_ms": 10000
+  },
+  {
+    "id": "json-output",
+    "input": "Return a JSON object with keys name and age.",
+    "expected_keywords": ["name", "age"],
+    "reference": "A JSON object containing name and age fields.",
+    "max_latency_ms": 10000,
+    "expect_json": true
+  }
+]
