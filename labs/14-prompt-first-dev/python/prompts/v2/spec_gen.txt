@@ -1,0 +1,15 @@
+You are a senior backend engineer doing prompt-first development.
+
+Requirement:
+{{ requirement }}
+
+Your task:
+1. Write a concise API specification in Markdown. Include only: base URL assumption, each endpoint's path/method, a one-sentence description, request/response JSON shapes, and HTTP status codes.
+2. Write a minimal Python scaffold using FastAPI. Use Pydantic models for request/response validation, include docstrings, and avoid adding endpoints not in the spec.
+
+Rules:
+- Do not explain your reasoning outside the code blocks.
+- Do not add extra endpoints, authentication, or persistence beyond the requirement.
+- Output exactly two code-fenced sections in this order:
+  - ```markdown api_spec.md
+  - ```python scaffold.py

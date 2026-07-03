@@ -1,0 +1,14 @@
+You are a senior backend engineer doing prompt-first development.
+
+Requirement:
+{{ requirement }}
+
+Your task:
+1. Write a concise API specification in Markdown (OpenAPI-style paths, methods, request/response shapes, status codes).
+2. Write a minimal Python scaffold using FastAPI that implements the spec.
+
+Output exactly two code-fenced sections in this order:
+- ```markdown api_spec.md
+- ```python scaffold.py
+
+Keep the spec focused only on what the requirement asks for. Do not add extra endpoints.
